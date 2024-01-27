@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looking for the limits of our memory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#instructions">Instructions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <h1 id="main-title">Memory Test</h1>
+
+    <div class="container">
+        <div id="intro">
+            <p>Hello! You are going to do a memory test to check the limits of your memory. Good Luck!</p>
+            <button id="startTest">Start Test</button>
+        </div>
+        <div id="imageArea" style="display:none;"></div>
+        <div id="timer" style="display:none;">5</div>
+        
+        <form id="questionForm" style="display:none;">
+            <!-- Preguntas y respuestas aquí -->
+            <!-- Ejemplo de preguntas -->
+            <p>What was the predominant color in the image?</p>
+            <label><input type="radio" name="question1" value="red"> Red</label>
+            <label><input type="radio" name="question1" value="blue"> Blue</label>
+            <label><input type="radio" name="question1" value="yellow"> Yellow</label>
+
+            <div class="question">
+                <p>Describe an object you remember from the image:</p>
+                <input type="text" id="openQuestion" class="openQuestion" placeholder="Type your answer here">
+            </div>
+
+            <div class="submit-button">
+                <button type="submit">Submit Answer</button>
+            </div>
+        </form>
+
+        <div id="confirmationMessage" style="display:none;">
+            <p>Your response has been submitted!</p>
+        </div>
+    </div>
+
+    <section id="aboutSection">
+        <button id="aboutToggle" class="accordion">About</button>
+        <div class="panel">
+            <p>The website is a simple yet formal platform designed for a memory testing experiment. Its main purpose is to help in a research study by testing how well people can remember and recall details from an image they saw briefly. Users see an image for a short time, and then answer questions about it. This process helps gather important data to understand human memory better, contributing to research in this field. The website is user-friendly and aims to make participation in this memory study both easy and interesting.</p>
+        </div>
+    </section>
+
+    <section id="instructions">
+        <h2>Instructions</h2>
+        <p>[Detailed instructions on how to take the test]</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>[Contact information or form]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Memory Test. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
